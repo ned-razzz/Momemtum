@@ -5,11 +5,11 @@ const greeting = document.querySelector("#greeting")
 const HIDDEN_CLASS_TOKEN = "hidden";
 const USERNAME_KEY = "username";
 
+
 function paintGreetings(greetingText) {
 	greeting.innerText = "Hello " + greetingText;
 	greeting.classList.remove(HIDDEN_CLASS_TOKEN);
 }
-
 
 function onLoginSubmit(event) {
 	event.preventDefault();
