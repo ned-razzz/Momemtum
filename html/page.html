@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/style.css">
-	<title>Momemtum App</title>
-</head>
-<body>
-	<!-- login format -->
-	<form id="login-form" class="hidden">
-		<input required maxlength="15" type="text" placeholder="What is your name">
-		<button>Log In</button>
-	</form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Momemtum App</title>
+  </head>
+  <body>
+    <!-- login format -->
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name"
+      />
+      <button>Log In</button>
+    </form>
 
+    <!-- greetings when to login-->
+    <h1 id="greeting" class="hidden"></h1>
 
-	<!-- greetings when to login-->
-	<h1 id="greeting" class="hidden"></h1>
+    <!-- to do list -->
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do list" />
+    </form>
 
+    <ul id="todo-list"></ul>
 
-	<!-- to do list -->
-	<form id="todo-form">
-		<input type="text" placeholder="Write a To Do list">
-	</form>
-	
-	<ul id="todo-list"></ul>
+    <!--clock-->
+    <h2 id="clock">not loading</h2>
 
-	
-	<!--clock-->
-	<h2 id="clock">not loading</h2>
+    <!--Quotes-->
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
 
-	
-	<!--Quotes-->
-	<div id="quote">
-		<span></span>
-		<span></span>
-	</div>
+    <!-- Weather -->
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
 
-	                         
-	<!--javascripts-->
-	<script src="../js/tool.js"></script>
-	<script src="../js/login.js"></script>
-	<script src="../js/clock.js"></script>
-	<script src="../js/quotes.js"></script>
-	<script src="../js/background.js"></script>
-	<script src="../js/todoList.js"></script>
-</body>
+    <!--javascripts-->
+    <script src="../js/tool.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/clock.js"></script>
+    <script src="../js/quotes.js"></script>
+    <script src="../js/background.js"></script>
+    <script src="../js/todoList.js"></script>
+    <script src="../js/weather.js"></script>
+  </body>
 </html>
