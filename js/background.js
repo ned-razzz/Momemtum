@@ -1,11 +1,11 @@
-const randImages = ["Mist Beach.jpg", "Mediterranean.jpg", "Europe.jpg"]
+const randImages = ["Mist_Beach.jpg", "Mediterranean.jpg", "Europe.jpg"]
 
 const chosenImage = randImages[getRandInt(0, randImages.length)];
 
-const bgImageElement = document.createElement("img");
+const bgImageElement = document.querySelector(".background");
 
-bgImageElement.src = `../img/${chosenImage}`;
+bgImageElement.style.backgroundImage = `url(../img/${chosenImage})`;
 
-console.log(bgImageElement);
+console.log(chosenImage);
 
 document.body.appendChild(bgImageElement);

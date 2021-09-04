@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../css/base.css" />
+	<link rel="stylesheet" href="../css/header.css" />
+	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="stylesheet" href="../css/tool.css" />
+	<title>Momemtum</title>
+</head>
+
+<body class="background">
+	<div class="center">
+		<header class="header">
+			<!-- header logo -->
+			<div class="head-logo">
+				<div class="head-logo__img"></div>
+			</div>
+			<!-- user info -->
+			<div class="user-info">
+				<form class="login-form user-info__login-form hidden">
+					<input class="login-form__input" required maxlength="15" type="text"
+						placeholder="Put your Name and Enter" />
+				</form>
+				<h1 class="greeting hidden">Greeting</h1>
+				<h2 class="clock">Loading...</h2>
+			</div>
+		</header>
+		<main class="main">
+			<section class="todo-section">
+				<form class="todo-form">
+					<input class="todo-form__input" type="text" placeholder="Write a To Do list" />
+				</form>
+				<ul class="todo-list"></ul>
+			</section>
+			<div class="loc-info">
+				<span class="loc-info__city"></span>
+				<span class="loc-info__weather"></span>
+			</div>
+		</main>
+		<footer>
+			<!-- project & developer links -->
+			<!-- credit -->
+		</footer>
+	</div>
+	<script src="../js/tool.js"></script>
+	<script src="../js/login.js"></script>
+	<script src="../js/clock.js"></script>
+	<script src="../js/background.js"></script>
+	<script src="../js/todoList.js"></script>
+	<script src="../js/weather.js"></script>
+</body>
+
+</html>

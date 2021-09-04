@@ -1,0 +1,9 @@
+.hidden {
+  display: none;
+}
+
+.center {
+	width: 800px; height: 1080px;
+  	margin: 0 auto;
+	background-color: white;
+}

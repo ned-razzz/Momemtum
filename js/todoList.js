@@ -1,6 +1,6 @@
-const todoForm = document.querySelector("#todo-form");
-const todoInput = todoForm.querySelector("#todo-form input")
-const todoList = document.querySelector("#todo-list")
+const todoForm = document.querySelector(".todo-form");
+const todoInput = todoForm.querySelector(".todo-form__input")
+const todoList = document.querySelector(".todo-list")
 
 
 
@@ -22,7 +22,7 @@ function saveTodoDB() {
 
 function deleteTodo(event) {
 	const targetTodo = event.target.parentElement;
-	
+
 	const idx = todoDB.findIndex(todo => todo.id === parseInt(targetTodo.id));
 	todoDB.splice(idx, 1);
 	saveTodoDB();
@@ -33,12 +33,15 @@ function deleteTodo(event) {
 function addTodo(newTodo) {
 	const todoItem = document.createElement("li");
 	todoItem.id = newTodo.id;
+	todoItem.classList.add("todo-list__item");
 
 	const todoDesc = document.createElement("span");
 	todoDesc.innerText = newTodo.text;
+	todoDesc.classList.add("todo-list__text");
 
 	const delButton = document.createElement("button");
 	delButton.innerText = "X";
+	delButton.classList.add("todo-list__delete");
 	delButton.addEventListener("click", deleteTodo);
 
 	todoItem.appendChild(todoDesc);
@@ -48,7 +51,7 @@ function addTodo(newTodo) {
 
 function handleToDoSubmit(event) {
 	event.preventDefault();
-	
+
 	const submitedTodo = {
 		text: todoInput.value,
 		id: Date.now(),

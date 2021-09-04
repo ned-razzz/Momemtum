@@ -1,5 +1,4 @@
-const clock = document.querySelector("h2#clock");
-
+const clock = document.querySelector(".clock");
 
 function getClock() {
 	const dateObject = new Date();
@@ -10,4 +9,4 @@ function getClock() {
 }
 
 getClock();
-setInterval(getClock, 1000, 2000, 3000);
+setInterval(getClock, 1000);
